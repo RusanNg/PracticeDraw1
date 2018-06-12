@@ -25,6 +25,7 @@ public class Practice2DrawCircleView extends View {
     Paint p1 = new Paint();
     Paint p2 = new Paint();
     Paint p3 = new Paint();
+    Paint p4 = new Paint();
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -42,7 +43,12 @@ public class Practice2DrawCircleView extends View {
 
         p3.setColor(Color.BLUE);
         p3.setStyle(Paint.Style.FILL);
-        canvas.drawCircle(230, 220, 100, p3);
+        canvas.drawCircle(230, 320, 100, p3);
+
+        p4.setColor(Color.BLACK);
+        p4.setStyle(Paint.Style.STROKE);
+        p4.setStrokeWidth(20);
+        canvas.drawCircle(460, 320, 100, p4);
 
 
 
